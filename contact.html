@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="assets/Logo no background.png">
+    <title>KhanaExpress - Anywhere, Everywhere</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navigationBar">
+        <!--Logo Navigation Bar-->
+        <img class="logo" src="assets/Logo no background.png"Logo Khana Express">
+        <!--Tulisan pada header-->
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="location.html">Location</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Hubungi Kami</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="assets/Poster image.png" style="width:100%">
+          </div>
+          <div class="column">
+            <form id="form">
+                <!-- Full Name -->
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Your name..">
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <!-- Kota -->
+                <label for="city">City</label>
+                <select id="city" name="city">
+                  <option value="">Select a city</option>
+                  <option value="Jakarta Barat">Jakarta Barat</option>
+                  <option value="Jakarta Timur">Jakarta Timur</option>
+                  <option value="Jakarta Pusat">Jakarta Pusat</option>
+                  <option value="Jakarta Selatan">Jakarta Selatan</option>
+                  <option value="Jakarta Utara">Jakarta Utara</option>
+                </select>
+                <!-- Subject -->
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                <div class="errormessage">
+                <!-- Error Message -->
+                <label for="error" id="error" value=""></label>
+                </div>
+                <!-- Button -->
+                <input type="submit" id="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class=footer>
+            <p>
+                &copy; Khana Express Binus - LC11
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="contact.js"></script>
+</html>

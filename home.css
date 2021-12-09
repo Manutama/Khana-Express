@@ -1,0 +1,235 @@
+*{
+  box-sizing: border-box;
+}
+body{ 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Navigation Bar */
+.navigationBar {
+  overflow: hidden;
+  background-color: #FDC921;
+  padding: 20px 150px;
+  position: sticky;
+  position:-webkit-sticky;
+  top: 0;
+  background-color: #FDC921;
+  z-index: 1;
+  border: 1px solid #FDC921;
+}
+/* Logo Pada Navigation Bar */
+.logo{
+    height: 10%;
+    width: 100px;
+}
+/* List Menu Pada Navigation Bar */
+.navigationBar a{
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+/* Efek Dari Mouse Hover Pada Navigation Bar*/
+.navigationBar a:hover{
+  color: #6798C0;
+}
+/* Posisi List Menu Navigation Bar */
+.menu{
+  float: right;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  background-color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  background-color: white;
+  clear: both;
+}
+/* ROW 1 */
+/* Gambar 1 */
+.gambar1{
+    text-align: right;
+}
+img{
+    width: 50%;
+}
+
+/* Deskripsi 1 */
+.deskripsi1{
+    padding-top: 30px;
+}
+.deskripsi1 h1{
+    color: #6798C0;
+    font-size: 38px;
+}
+.deskripsi1 p{
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Tombol */
+.tombol{
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 75px;
+}
+.tombol p a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FDC921;
+    padding: 15px;
+    border-radius: 30px;
+}
+.tombol p a:hover{
+    color: #6798C0;
+}
+
+/* ROW 2 */
+/* Deskripsi 2 */
+.deskripsi2{
+    padding-top: 30px;
+}
+.deskripsi2 h1{
+    color: #6798C0;
+    font-size: 38px;
+    text-align: right;
+}
+.deskripsi2 h4{
+    font-size: 24px;
+    text-align: right;
+    font-weight: lighter;
+}
+.deskripsi2 p{
+    font-size: 14px;
+    text-align: justify;
+    padding-left: 50%;
+}
+/* Gambar 2 */
+.gambar2{
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* ROW 3 */
+.kolomreview{
+    text-align: center;
+}
+.kolomreview h1{
+    font-size: 28px;
+    font-weight: lighter;
+}
+.kolomgambar{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides{
+    display: none;
+}
+.gambarreview{
+    vertical-align: middle;
+    width: 25%;
+    height: auto;
+}
+.tengah, .titik{
+    text-align: center;
+}
+/* Titik */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot .active{
+  background-color: #717171;
+}
+/* Animasi */
+.fade{
+  -webkit-animation-name: dissolve;
+  -webkit-animation-duration: 2s;
+  animation-name: dissolve;
+  animation-duration: 2s;
+}
+.align{
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Newsletter */
+.kolomnews{
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+input[type=text], input[type=submit]{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox]{
+  margin-top: 16px;
+}
+
+input[type=submit]{
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover{
+  opacity: 0.8;
+}
+/* Error Message */
+.errormessage{
+    padding: 20px;
+    color: red;
+    text-align: center;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #FDC921;
+    color: black;
+    text-align: center;
+    padding-bottom: 2%;
+    position: absolute;
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
